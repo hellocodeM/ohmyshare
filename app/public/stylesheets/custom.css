@@ -1,0 +1,41 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(/images/background.png) repeat;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.main {
+	text-align: center;
+	padding: 20px;
+}
+.header {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #6f5499;
+	text-align: left;
+	color: white;
+}
+
+.header h1 {
+	font-size: 44px;
+}
+
+.header h3 {
+	font-size: 28px;
+}
+
+.header p {
+	font-size: 18px;
+}
+
+.footer {
+	text-align:center;
+	font-size: 12px;
+}
