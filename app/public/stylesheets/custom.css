@@ -1,23 +1,22 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url(/images/background.png) repeat;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background: url(/images/background.png) repeat;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
 }
 
-
+/*main page start*/
 .main {
 	text-align: center;
-	padding: 20px;
 }
 .header {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: #6f5499;
 	text-align: left;
 	color: white;
@@ -38,4 +37,48 @@ a {
 .footer {
 	text-align:center;
 	font-size: 12px;
+	position: static;
+	bottom: 0;
 }
+
+.search-bar {
+
+}
+
+.search-title {
+
+}
+
+.search-result {
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 400px;
+	text-align: left;
+}
+
+#tagsList {
+	height: 300px;
+	width: 300px;
+	position: relative;
+	padding: 10px;
+	margin: auto;
+}
+#tagsList a {
+	position: absolute;
+	top: 0px;
+	left: 0px; 
+	font-family:  Microsoft YaHei; 
+	color: black; 
+	font-weight: bold; 
+	text-decoration: none; 
+	padding:  3px 6px; 
+}
+#tagsList a:hover { 
+	color: #3a76c5 ;
+	letter-spacing: 2px;
+}
+
+/*main page end*/
+
+

@@ -2,16 +2,15 @@
 <html>
 	<% include head %>
 	<body>
-		<% include header %>
+		<div class="header">
+			<div class="container">
+				<h3>学习资源分享平台</h3>
+			</div>
+		</div>
 		<div class="container">
 			<div class="main">
 				<div class="search-title">
 					<h3>Welcome to oh my share</h3>
-				</div>
-				<div id="tagsList">
-					<% for(var i in history) {%>
-					<a href="#"><%= history[i] %></a>
-					<% } %>
 				</div>
 				<form class="form-inline search-bar" action="/search" method="get" role="form">
 					<div class="form-group">
@@ -19,6 +18,9 @@
 					</div>
 					<button type="submit" class="btn btn-default">搜索</button>
 				</form>
+				<div class="search-result">
+					<p>oops, no result</p>
+				</div>
 			</div>
 		</div>
 	</body>
