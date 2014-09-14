@@ -1,2 +1,4 @@
 node_modules/
 app/DB/data/
+app/cache/cache.json
+app/node_modules/
