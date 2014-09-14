@@ -12,14 +12,19 @@ a {
 	text-align: center;
 }
 .header {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #6f5499;
+/*	background-color: #6f5499; */
 	text-align: left;
 	color: white;
+}
+
+.header .container {
+	width: 800px;
 }
 
 .header h1 {
@@ -39,6 +44,8 @@ a {
 	font-size: 12px;
 	position: static;
 	bottom: 0;
+	margin: auto;
+	margin-top: 20px;
 }
 
 .search-bar {
@@ -56,6 +63,7 @@ a {
 	width: 400px;
 	text-align: left;
 }
+
 
 #tagsList {
 	height: 300px;
