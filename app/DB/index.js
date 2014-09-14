@@ -23,5 +23,10 @@ function readAllFiles(dirname, files) {
 		}
 	}
 }
+
+function update() {
+
+}
 exports.data = files;
+exports.update = update;
 
