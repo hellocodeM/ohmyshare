@@ -27,6 +27,7 @@ app.use(express.methodOverride());
 app.use(express.session({ secret: 'your secret here' }));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'DB/data')));
 
 // development only
 if ('development' == app.get('env')) {

@@ -1,12 +1,18 @@
-var query = [
-	'1',
-	'2',
-	'3',
-	'4',
-	'5',
-	'6',
-	'7',
-	'8',
-	'9'];
+var DB = [];
 
-module.exports.query = query;
+
+exports.get = function(query) {
+	for (var i in DB) {
+		if (DB[i].query === query) {
+			return DB[i].result;
+		}
+	}
+}
+
+exports.set = function(query, result) {
+	DB.push({
+		query: query,
+		result: result
+	});
+}
+

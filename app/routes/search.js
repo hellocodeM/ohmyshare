@@ -1,12 +1,8 @@
 var DB = require("../DB");
+var Sea = require("../search");
 
 exports.index = function(req, res){
-	var result = search(req.query.query, DB.data);
+	var result = Sea.search(req.query.query, DB.data());
 	res.render('search', {result: result});
 };
-
-function search(query, data) {
-	var result = data;
-	return result;
-}
 

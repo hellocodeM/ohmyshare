@@ -19,19 +19,14 @@
 					<p>oops, no result</p>
 					<% }else {%>
 					<% for (var i in result) {%>
-<!--					<ul class="list-group">
-						<li class="list-group-item">
-							<%= result[i].name %>
-							<a class="btn btn-primary pull-right" href="<%= result[i].link %>">Download</a>
-						</li>
-					</ul>
--->
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<%= result[i].name %>
 						</div>
 						<div class="panel-body">
-							<%= result[i].desc %>
+							<% for (var j in result[i].keywords) {%>
+							<%= result[i].keywords[j] %>
+							<% } %> 
 							<a class="btn btn-primary pull-right" href="<%= result[i].link %>">Download</a>
 						</div>
 					</div>
