@@ -1,6 +1,7 @@
 var fs = require("fs");
 var Config = require("../config");
 var DB = [];
+var changed = false;
 
 exports.get = function(query) {
 	for (var i in DB) {
@@ -15,7 +16,7 @@ exports.set = function(query, result) {
 		query: query,
 		result: result
 	});
-	save();
+	changed = true;
 }
 
 exports.history = function() {
@@ -40,10 +41,17 @@ exports.load = function() {
 function save() {
 	var dest = Config.cacheDest;
 	var data = JSON.stringify(DB);
-	fs.writeFile(dest, data, function(err) {
-		if (err)
-			console.log("failed:\tcache");
-	})	
+	if (changed) { 
+		fs.writeFile(dest, data, function(err) {
+			if (err)
+				console.log("failed:\tcache");
+			else {
+				console.log();
+			}
+		})	
+		changed = false;
+	}
 }
 
 exports.load();
+setInterval(save, 1000 * 60);

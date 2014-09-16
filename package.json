@@ -4,7 +4,8 @@
   "description": "A resource sharing plateform in suda.",
   "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app/app.js"
   },
   "repository": {
     "type": "git",
