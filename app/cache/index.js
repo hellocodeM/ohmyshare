@@ -27,13 +27,7 @@ exports.load = function() {
 	var dest = Config.cacheDest;
 	fs.exists(dest, function(exists) {
 		if (exists) {
-			fs.readFile(dest, function(err, data) {
-				if (err) {
-					console.log("failed", "read cache");
-				} else {
-					DB = JSON.parse(data);
-				}
-			})
+			DB = require(dest);
 		}
 	})
 }
